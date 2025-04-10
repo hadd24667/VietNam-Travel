@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="730.0" prefWidth="1350.0" stylesheets="@../../../css/mainView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAttractions">
+    <children>
+      <AnchorPane id="BGPane" prefHeight="730.0" prefWidth="1362.0" />
+        <AnchorPane layoutY="55.0" opacity="0.65" prefHeight="670.0" prefWidth="567.0" style="-fx-background-color: #f9f7e8;">
+            <cursor>
+                <Cursor fx:constant="NONE" />
+            </cursor>
+            <effect>
+                <BoxBlur height="252.0" iterations="3" width="255.0" />
+            </effect>
+        </AnchorPane>
+        <AnchorPane id="blurPane" prefHeight="730.0" prefWidth="1362.0" />
+        <AnchorPane layoutX="-1.0" prefHeight="730.0" prefWidth="1362.0">
+            <children>
+                <ImageView id="location_logo" fitHeight="38.0" fitWidth="41.0" layoutX="97.0" layoutY="235.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../../../img/Location_icon.png" />
+                    </image>
+                    <effect>
+                        <ColorAdjust brightness="0.95" />
+                    </effect>
+                </ImageView>
+                <Button id="btSave" fx:id="btSave" layoutX="102.0" layoutY="605.0" mnemonicParsing="false" onAction="#handleBtSaveAction" prefHeight="42.0" prefWidth="128.0" style="-fx-background-color: #f9f7e8;" text="SAVE" textFill="#263e2a">
+                    <font>
+                        <Font name="BenguiatStd-MediumCondensed" size="18.0" />
+                    </font>
+                    <effect>
+                        <DropShadow height="6.34" radius="4.8" spread="0.02" width="14.86">
+                            <color>
+                                <Color opacity="0.885496199131012" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+            <TextArea fx:id="textContent" layoutX="102.0" layoutY="352.0" prefHeight="241.0" prefWidth="626.0" promptText="Content" styleClass="color-textArea">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="textPrice" layoutX="561.0" layoutY="605.0" prefHeight="46.0" prefWidth="166.0" promptText="000.000" styleClass="btMenu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="722.0" layoutY="605.0" prefHeight="46.0" prefWidth="91.0" styleClass="btMenu" text="VND">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textPlace" layoutX="102.0" layoutY="275.0" prefHeight="67.0" prefWidth="626.0" promptText="Place" styleClass="blur">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textLocation" layoutX="138.0" layoutY="236.0" prefHeight="34.0" prefWidth="590.0" promptText="Location" styleClass="blur">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <ImageView id="location_logo" fx:id="imgViewData" fitHeight="254.0" fitWidth="262.0" layoutX="1017.0" layoutY="309.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../img/ImageNull.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane id="menuPane" layoutY="-3.0" prefHeight="57.0" prefWidth="1361.0" style="-fx-background-color: #f7f9e8;">
+            <children>
+                <ImageView id="imgMainLogo" fitHeight="63.0" fitWidth="52.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/MainLogo.png" />
+                    </image>
+                </ImageView>
+                <Label id="labelName" layoutX="51.0" layoutY="17.0" prefHeight="27.0" prefWidth="184.0" text="VIETNAMTRAVEL" textAlignment="CENTER">
+                    <font>
+                        <Font name="BenguiatStd-MediumCondensed" size="20.0" />
+                    </font>
+                </Label>
+                <AnchorPane id="menuPane" layoutX="500.0" prefHeight="58.0" prefWidth="663.0">
+                    <children>
+                        <Button fx:id="menuHome" layoutX="-4.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuHomeAction" prefHeight="52.0" prefWidth="148.0" styleClass="btMenu" text="Attractions" />
+                        <Button fx:id="menuDes" layoutX="145.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuDestiAction" prefHeight="52.0" prefWidth="172.0" styleClass="btMenu" text="Destinations" />
+                        <Button fx:id="menuStay" layoutX="321.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuStayAction" prefHeight="52.0" prefWidth="114.0" styleClass="btMenu" text="Stay" />
+                    </children>
+                </AnchorPane>
+                 <Button id="btAccount" fx:id="btAccount" cache="true" layoutX="1214.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleBtAccountAction" prefHeight="38.0" prefWidth="107.0" text="Admin">
+                     <font>
+                         <Font name="Alatsi Regular" size="15.0" />
+                     </font>
+                     <graphic>
+                         <ImageView fitHeight="24.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                             <image>
+                                 <Image url="@../../../img/Account_icon.png" />
+                             </image>
+                         </ImageView>
+                     </graphic>
+                 </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

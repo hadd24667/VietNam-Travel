@@ -1,0 +1,165 @@
+.root{
+    -fx-background-image: url("../img/HaLongBay.jpeg");
+    -fx-background-size: cover;
+}
+#menuPane{
+    -fx-background-color: #f9f7e8;
+}
+#menuBar{
+    -fx-background-color: #f9f7e8;
+    -fx-font-family: 'Times New Roman', serif;
+    -fx-font-size: 25px;
+    -fx-text-fill: #263e2a;
+
+    -fx-alignment: center;
+}
+#menuHome{
+    -fx-text-fill: #263e2a;
+}
+.btMenu{
+    -fx-background-color: #f9f7e8;
+    -fx-font-family: 'Times New Roman', serif;
+    -fx-font-size: 25px;
+    -fx-text-fill: #263e2a;
+}
+.btMenu:hover{
+    -fx-background-color: #327da8;
+}
+#blurPane{
+    -fx-background-color: rgba(11, 22, 22, 0.45);
+}
+#location_logo {
+
+}
+#searchTextField{
+        -fx-border-color: #263e2a; /* Màu viền */
+        /*-fx-background-color: #7c7b5a;!*maàu nền*!*/
+        -fx-border-width: 1px; /* Độ rộng viền */
+        -fx-border-radius: 23px; /* Bán kính bo tròn viền */
+        -fx-background-radius: 28;
+}
+#searchTextField{
+    -fx-text-fill: #a1a2b4;
+    -fx-background-color: #f9f7e8;
+}
+#btSearch{
+    -fx-background-image: url("../img/Search_logo.png");
+    -fx-background-size: cover;
+    -fx-background-color: #f9f7e8;
+
+    -fx-transition: all 0.5s ease;
+
+}
+#btSearch:hover{
+    /*-fx-background-color: #263e2a;*/
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+#btSignUp{
+
+        -fx-text-fill: #263e2a;
+        -fx-background-color: #f9f7e8;
+
+        -fx-border-color: #263e2a; /* Màu viền */
+        /*-fx-background-color: #7c7b5a;!*maàu nền*!*/
+        -fx-border-width: 2px; /* Độ rộng viền */
+        -fx-border-radius: 10px; /* Bán kính bo tròn viền */
+        -fx-background-radius: 15;
+
+        -fx-transition: all 0.5s ease;
+}
+#btLogin{
+    -fx-text-fill: #f9f7e8;
+
+    -fx-background-color: #263e2a;
+
+    -fx-border-color: #263e2a; /* Màu viền */
+    /*-fx-background-color: #7c7b5a;!*maàu nền*!*/
+    -fx-border-width: 2px; /* Độ rộng viền */
+    -fx-border-radius: 10px; /* Bán kính bo tròn viền */
+    -fx-background-radius: 13;
+
+}
+#btLogin:hover{
+    -fx-background-color: #f9f7e8;
+    -fx-text-fill: #263e2a;
+
+}
+#btSignUp:hover{
+    -fx-background-color: #263e2a;
+    -fx-text-fill: #f9f7e8;
+
+}
+
+#btAccount{
+
+    -fx-text-fill: #263e2a;
+    -fx-background-color: #f9f7e8;
+
+    -fx-border-color: #263e2a; /* Màu viền */
+    /*-fx-background-color: #7c7b5a;!*maàu nền*!*/
+    -fx-border-width: 2px; /* Độ rộng viền */
+    -fx-border-radius: 20px; /* Bán kính bo tròn viền */
+    -fx-background-radius: 25;
+
+    -fx-transition: all 0.5s ease;
+}
+
+#btAccount:hover{
+    -fx-background-color: #263e2a;
+    -fx-text-fill: #f9f7e8;
+
+}
+#lableName{
+    -fx-text-fill: #263e2a;
+}
+.font{
+    -fx-font-family: 'Times New Roman', serif;
+    -fx-text-fill: #ffffff;
+}
+.blur{
+    -fx-background-color: rgba(255, 255, 255, 0.16);
+}
+#imgBooking{
+    -fx-background-size: cover;
+}
+.resultButton{
+    -fx-font-family: "Times New Roman";
+    -fx-background-color: #f9f7e8;
+    -fx-font-size: 15px;
+
+    -fx-border-color: #263e2a; /* Màu viền */
+    -fx-border-width: 2px; /* Độ rộng viền */
+    -fx-border-radius: 20px; /* Bán kính bo tròn viền */
+    -fx-background-radius: 25;
+}
+
+/*Scroll Pane*/
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.scroll-bar{
+    -fx-background-color: transparent;
+}
+.scroll-bar .viewport{
+    -fx-background-color: transparent;
+}
+.scroll-bar .vertical{
+    -fx-background-color: transparent;
+}
+.color-textArea{
+    /*-fx-control-inner-background:rgba(255, 255, 255, 0.16);*/
+    -fx-font-family: Consolas;
+    /*-fx-highlight-fill: #00ff00; */
+    /*-fx-highlight-text-fill: rgba(255, 255, 255, 0.16);*/
+    /*-fx-text-fill: #00ff00;*/
+}
+
+#BGPane{
+    -fx-background-image: url("../img/HT1.jpg");
+    -fx-background-size: cover;
+}
+

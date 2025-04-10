@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="730.0" prefWidth="1357.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DestinationViewController">
+    <children>
+      <ImageView id="textarea1" cache="true" fitHeight="812.0" fitWidth="1368.0" layoutX="-7.0" layoutY="-82.0" opacity="0.48">
+         <image>
+            <Image url="@../../../img/destinationBackground.png" />
+         </image>
+      </ImageView>
+        <AnchorPane id="menuPane" layoutY="-3.0" prefHeight="57.0" prefWidth="1361.0" style="-fx-background-color: #f7f9e8;">
+            <children>
+                <ImageView id="imgMainLogo" fitHeight="42.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/MainLogo.png" />
+                    </image>
+                </ImageView>
+                <MenuBar id="menuBar" layoutX="555.0" layoutY="16.0" prefHeight="26.0" prefWidth="278.0" style="-fx-background-color: #f7f9e8;">
+                    <menus>
+                        <Menu fx:id="menuHome" mnemonicParsing="false" text="Home" />
+                        <Menu fx:id="menuDesti" mnemonicParsing="false" text="Destinations" />
+                        <Menu fx:id="menuHotel" mnemonicParsing="false" text="Hotel" />
+                        <Menu fx:id="menuTicket" mnemonicParsing="false" text="My ticket">
+                            <items>
+                        <MenuItem mnemonicParsing="false" text="Visit ticket" />
+                                <MenuItem mnemonicParsing="false" text="Room" />
+                        <MenuItem mnemonicParsing="false" text="Transportaiton" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <Button id="btSignUp" fx:id="btSignUp" cache="true" layoutX="1135.0" layoutY="11.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="80.0" text="SignUp">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+                <Label id="labelName" layoutX="35.0" layoutY="16.0" prefHeight="26.0" prefWidth="98.0" text="VIETNAMTRAVEL" textAlignment="CENTER" />
+                <Button id="btLogin" fx:id="btLogin" layoutX="1231.0" layoutY="11.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="80.0" text="LogIn">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+      <Line endX="1116.0" layoutX="245.0" layoutY="365.0" opacity="0.52" startX="-245.0" stroke="WHITE" strokeWidth="1.5" />
+      <Label layoutX="162.0" layoutY="117.0" prefHeight="42.0" prefWidth="150.0" text="Leaving from" textFill="#f2d7ba">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="163.0" layoutY="160.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="570.0" layoutY="120.0" prefHeight="30.0" prefWidth="150.0" text="Going to" textFill="#f2d7ba">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="569.0" layoutY="156.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField layoutX="1018.0" layoutY="152.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="1018.0" layoutY="110.0" prefHeight="42.0" prefWidth="150.0" text="Traverlers" textFill="#f2d7ba">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="227.0" prefHeight="30.0" prefWidth="150.0" text="Departing" textFill="#f2d7ba">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="163.0" layoutY="264.0" />
+      <Label layoutX="570.0" layoutY="227.0" prefHeight="14.0" prefWidth="150.0" text="Returning" textFill="#f2d7ba">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="569.0" layoutY="261.0" />
+      <RadioButton layoutX="570.0" layoutY="297.0" mnemonicParsing="false" text="Return" textFill="#fffdfd" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="166.0" layoutY="386.0" prefHeight="42.0" prefWidth="150.0" text="Transportation" textFill="#f2d7ba">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="166.0" layoutY="436.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="167.0" layoutY="484.0" prefHeight="42.0" prefWidth="150.0" text="Brand" textFill="#f2d7ba">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="167.0" layoutY="526.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="166.0" layoutY="572.0" prefHeight="42.0" prefWidth="150.0" text="Numbers of seat" textFill="#f2d7ba">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="167.0" layoutY="615.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="669.0" layoutY="449.0" prefHeight="45.0" prefWidth="92.0" text="TOTAL" textAlignment="CENTER" textFill="#f2d7ba">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="599.0" layoutY="493.0" prefHeight="57.0" prefWidth="215.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" />
+      <Button layoutX="653.0" layoutY="559.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" style="-fx-background-color: #f2d7ba;" text="PAY">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextArea fx:id = "textarea1" styleClass="transparent-text-area" layoutX="936.0" layoutY="473.0" prefHeight="121.0" prefWidth="289.0" text="hanh dz so 1 k ai so 2&#10;" />
+    </children>
+</AnchorPane>

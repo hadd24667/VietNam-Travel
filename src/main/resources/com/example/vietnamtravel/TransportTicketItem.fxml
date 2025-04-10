@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="transportItem" prefHeight="256.0" prefWidth="1060.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Ticket ID:" textFill="#000000b2">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="65.0" text="Type of Transport:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="115.0" text="Go date:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="706.0" layoutY="65.0" text="Name:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="65.0" text="Time:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="115.0" text="Number of Seats:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="706.0" layoutY="115.0" text="Phone number:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="TypeOfTransport" fitHeight="99.0" fitWidth="776.0" layoutX="94.0" layoutY="157.0">
+         <image>
+            <Image url="@../../../img/train2-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="textID" layoutX="111.0" layoutY="14.0" text="0" textFill="#000000b2">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textType" layoutX="192.0" layoutY="65.0" text="Train/Plane/Bus">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textGoDate" layoutX="117.0" layoutY="115.0" text="00/00/2000">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textTime" layoutX="482.0" layoutY="65.0" text="00:00">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textSeats" layoutX="580.0" layoutY="115.0" text="01">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textName" layoutX="812.0" layoutY="65.0" text="Your Name">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textPhoneNum" layoutX="870.0" layoutY="115.0" text="0123456789">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textTotalPayment" layoutX="870.0" layoutY="194.0" text="000,000,000 VND" textFill="#21009a">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="416.0" layoutY="14.0" text="Company Name:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="texCompanyName" layoutX="580.0" layoutY="14.0" text="Dam Me Toc Do">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

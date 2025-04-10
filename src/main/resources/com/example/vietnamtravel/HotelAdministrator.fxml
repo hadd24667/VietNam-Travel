@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="730.0" prefWidth="1350.0" stylesheets="@../../../css/AdminHotel.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHotel">
+    <children>
+        <AnchorPane id="blurPane" prefHeight="730.0" prefWidth="1362.0">
+         <children>
+            <AnchorPane layoutY="58.0" prefHeight="672.0" prefWidth="1362.0">
+               <children>
+                  <ImageView fitHeight="672.0" fitWidth="1362.0">
+                     <image>
+                        <Image url="@../../../img/hotelSwimming.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane prefHeight="672.0" prefWidth="1362.0" style="-fx-background-color: rgba(11, 22, 22, 0.45);">
+                     <children>
+                        <AnchorPane layoutX="808.0" layoutY="74.0" prefHeight="598.0" prefWidth="422.0" style="-fx-background-color: rgba(11, 22, 22, 0.45);">
+                           <children>
+                              <TextField fx:id="nameHotelTF" layoutX="30.0" layoutY="59.0" prefHeight="38.0" prefWidth="370.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></TextField>
+                              <Label layoutX="30.0" layoutY="29.0" text="Name hotel" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="115.0" text="Address" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="25.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="addressTF" layoutX="30.0" layoutY="145.0" prefHeight="38.0" prefWidth="370.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></TextField>
+                              <Label layoutX="26.0" layoutY="203.0" text="Capacity" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="25.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="capacityTF" layoutX="30.0" layoutY="233.0" prefHeight="38.0" prefWidth="370.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></TextField>
+                              <Label layoutX="30.0" layoutY="294.0" text="Price" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="25.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="priceTF" layoutX="30.0" layoutY="324.0" prefHeight="38.0" prefWidth="370.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></TextField>
+                              <Button fx:id="btAdd" layoutX="255.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleAddAction" prefHeight="30.0" prefWidth="160.0" text="Add" />
+                              <ImageView fx:id="imgHotel" fitHeight="122.0" fitWidth="172.0" layoutX="21.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/ImageNull.png" />
+                                 </image>
+                              </ImageView>
+                              <TextArea fx:id="contentTA" layoutX="30.0" layoutY="422.0" prefHeight="38.0" prefWidth="370.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label layoutX="31.0" layoutY="392.0" text="Content" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="161.0" layoutY="136.0" prefHeight="136.0" prefWidth="574.0" text="Hotel Manager" textFill="WHITE">
+                           <font>
+                              <Font name="Gabriola" size="96.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane layoutX="90.0" layoutY="252.0" prefHeight="322.0" prefWidth="660.0">
+                           <content>
+                              <VBox fx:id="vBoxHotel" prefHeight="316.0" prefWidth="658.0" />
+                           </content>
+                        </ScrollPane>
+                        <Button fx:id="btRefresh" layoutX="653.0" layoutY="585.0" mnemonicParsing="false" onAction="#handleRefreshAction" prefHeight="38.0" prefWidth="98.0" text="Refresh" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+        <AnchorPane id="menuPane" layoutY="-3.0" prefHeight="57.0" prefWidth="1361.0" style="-fx-background-color: #f7f9e8;">
+            <children>
+                <ImageView id="imgMainLogo" fitHeight="63.0" fitWidth="52.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/MainLogo.png" />
+                    </image>
+                </ImageView>
+                <Label id="labelName" layoutX="51.0" layoutY="17.0" prefHeight="27.0" prefWidth="184.0" text="VIETNAMTRAVEL" textAlignment="CENTER">
+                    <font>
+                        <Font name="BenguiatStd-MediumCondensed" size="20.0" />
+                    </font>
+                </Label>
+                <AnchorPane id="menuPane" layoutX="500.0" prefHeight="58.0" prefWidth="663.0">
+                    <children>
+                        <Button fx:id="menuHome" layoutX="-4.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuHomeAction" prefHeight="52.0" prefWidth="148.0" styleClass="btMenu" text="Attractions" />
+                        <Button fx:id="menuDes" layoutX="145.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuDestiAction" prefHeight="52.0" prefWidth="172.0" styleClass="btMenu" text="Destinations" />
+                        <Button fx:id="menuStay" layoutX="321.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuStayAction" prefHeight="52.0" prefWidth="114.0" styleClass="btMenu" text="Stay" />
+                    </children>
+                </AnchorPane>
+                <Button id="btAccount" fx:id="btAccount" cache="true" layoutX="1214.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleBtAccountAction" prefHeight="38.0" prefWidth="107.0" text="Admin">
+                    <font>
+                        <Font name="Alatsi Regular" size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Account_icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

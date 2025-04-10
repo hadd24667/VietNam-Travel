@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="39f31437-c0ef-4d56-b897-cf1b1a71ae7e" name="VietNamTravel@localhost Mapping">
+      <data-sources db="2d665d69-98ab-4e5e-963d-64c61d36730f" ddl="6dc556d7-9bd9-4bc4-b1e5-9d73e9c88eb4" />
+      <scope>
+        <node kind="database" qname="VietNamTravel">
+          <node kind="schema" qname="dbo" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>

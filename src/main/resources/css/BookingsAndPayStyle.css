@@ -1,0 +1,11 @@
+.button:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y:1.1;
+}
+#QRBankingPaneButton:hover,
+#CreditCardPaneButton:hover,
+#CreditCardPaneButton2:hover,
+#QRBankingPaneButton2:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

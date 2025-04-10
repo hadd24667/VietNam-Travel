@@ -1,0 +1,52 @@
+.root{
+    -fx-background-image: url("../img/Hotel.jpeg");
+    -fx-background-size: cover;
+}
+#menuPane{
+    -fx-background-color: #f9f7e8;
+}
+#menuBar{
+    -fx-background-color: #f9f7e8;
+    -fx-font-family: 'Times New Roman', serif;
+    -fx-font-size: 25px;
+    -fx-text-fill: #263e2a;
+
+    -fx-alignment: center;
+}
+#menuHome{
+    -fx-text-fill: #263e2a;
+}
+#blurPane{
+    -fx-background-color: rgba(11, 22, 22, 0.45);
+}
+#btAccount{
+
+    -fx-text-fill: #263e2a;
+    -fx-background-color: #f9f7e8;
+
+    -fx-border-color: #263e2a; /* Màu viền */
+    /*-fx-background-color: #7c7b5a;!*maàu nền*!*/
+    -fx-border-width: 2px; /* Độ rộng viền */
+    -fx-border-radius: 20px; /* Bán kính bo tròn viền */
+    -fx-background-radius: 25;
+
+    -fx-transition: all 0.5s ease;
+}
+
+#btAccount:hover{
+    -fx-background-color: #263e2a;
+    -fx-text-fill: #f9f7e8;
+
+}
+#lableName{
+    -fx-text-fill: #263e2a;
+}
+.font{
+    -fx-font-family: 'Times New Roman', serif;
+    -fx-text-fill: #ffffff;
+}
+
+
+
+
+

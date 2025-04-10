@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="730.0" prefWidth="1350.0" stylesheets="@../../../css/AdminDestinations.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDestinations">
+    <children>
+        <ImageView fitHeight="730.0" fitWidth="1350.0">
+            <image>
+                <Image url="@../../../img/flightVNT.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane disable="true" opacity="0.55" prefHeight="730.0" prefWidth="1350.0" style="-fx-background-color: black;">
+         <children>
+              <Label layoutX="524.0" layoutY="84.0" text="Administrator" textFill="#f9f7e8">
+                  <font>
+                      <Font name="BenguiatStd-MediumCondensed" size="50.0" />
+                  </font>
+                  <effect>
+                      <DropShadow height="29.79" radius="12.1975" spread="0.11">
+                          <color>
+                              <Color opacity="0.7786259651184082" />
+                          </color>
+                      </DropShadow>
+                  </effect>
+              </Label>
+         </children>
+      </AnchorPane>
+        <Pane layoutX="126.0" layoutY="200.0" prefHeight="208.0" prefWidth="1100.0" style="-fx-background-color: white; -fx-background-radius: 15px;">
+            <children>
+                <Label layoutX="63.0" layoutY="23.0" text="From" textFill="#000000b3">
+                    <font>
+                        <Font name="Alatsi Regular" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="255.0" layoutY="23.0" text="To" textFill="#000000b3">
+                    <font>
+                        <Font name="Alatsi Regular" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="fromTF" layoutX="63.0" layoutY="55.0" prefHeight="40.0" prefWidth="175.0" promptText="Ex: Da Nang">
+                    <font>
+                        <Font name="Alatsi Regular" size="17.0" />
+                    </font>
+            </TextField>
+                <TextField fx:id="toTF" layoutX="255.0" layoutY="55.0" prefHeight="40.0" prefWidth="175.0" promptText="Ex: Hue">
+                    <font>
+                        <Font name="Alatsi Regular" size="17.0" />
+                    </font>
+            </TextField>
+                <Label layoutX="471.0" layoutY="23.0" text="Go" textFill="#000000b3">
+                    <font>
+                        <Font name="Alatsi Regular" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="690.0" layoutY="23.0" text="Return" textFill="#000000b3">
+                    <font>
+                        <Font name="Alatsi Regular" size="20.0" />
+                    </font>
+                </Label>
+                <DatePicker fx:id="goTF" layoutX="463.0" layoutY="55.0" prefHeight="40.0" prefWidth="175.0" />
+                <DatePicker fx:id="returnTF" layoutX="690.0" layoutY="55.0" prefHeight="40.0" prefWidth="175.0" />
+                <Button fx:id="btSave" layoutX="937.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleBtSaveAction" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: #263e2a;" text="SAVE" textFill="#f9f7e8">
+                    <font>
+                        <Font name="Alatsi Regular" size="18.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="tenHangTF" layoutX="255.0" layoutY="106.0" prefHeight="40.0" prefWidth="175.0" promptText="TenHang">
+               <font>
+                  <Font name="Alatsi Regular" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="gioKhoiHanhTF" layoutX="462.0" layoutY="106.0" prefHeight="40.0" prefWidth="175.0" promptText="GioKhoiHanh">
+               <font>
+                  <Font name="Alatsi Regular" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="gioDenTF" layoutX="690.0" layoutY="106.0" prefHeight="40.0" prefWidth="175.0" promptText="GioDen">
+               <font>
+                  <Font name="Alatsi Regular" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="priceTF" layoutX="690.0" layoutY="154.0" prefHeight="40.0" prefWidth="175.0" promptText="000.000.000VND">
+               <font>
+                  <Font name="Alatsi Regular" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="soChoTF" layoutX="63.0" layoutY="106.0" prefHeight="40.0" prefWidth="175.0" promptText="SoLuong">
+               <font>
+                  <Font name="Alatsi Regular" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="sanBayDiTF" layoutX="63.0" layoutY="154.0" prefHeight="40.0" prefWidth="175.0" promptText="SanBayDi">
+               <font>
+                  <Font name="Alatsi Regular" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="sanBayDenTF" layoutX="255.0" layoutY="154.0" prefHeight="40.0" prefWidth="175.0" promptText="SanBayDen">
+               <font>
+                  <Font name="Alatsi Regular" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="maChuyenBayTF" layoutX="462.0" layoutY="154.0" prefHeight="40.0" prefWidth="175.0" promptText="MaChuyenBay">
+               <font>
+                  <Font name="Alatsi Regular" size="17.0" />
+               </font>
+            </TextField>
+            <Button id="btManage" fx:id="btManage" layoutX="937.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleBtManageAction" prefHeight="40.0" prefWidth="95.0" text="MANAGE" textFill="#f9f7e8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            </children>
+            <effect>
+                <DropShadow height="32.72" radius="12.93" spread="0.2">
+                    <color>
+                        <Color opacity="0.8664122223854065" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </Pane>
+      <ScrollPane layoutX="121.0" layoutY="420.0" prefHeight="284.0" prefWidth="1107.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="270.0" prefWidth="1104.0">
+               <children>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+        <Pane layoutX="337.0" layoutY="150.0" opacity="0.66" prefHeight="62.0" prefWidth="678.0" style="-fx-background-color: #f9f7e8; -fx-background-radius: 40px;">
+            <effect>
+                <DropShadow height="29.79" radius="20.2575" spread="0.17" width="53.24" />
+            </effect>
+            <children>
+                <HBox fx:id="BusBox" layoutX="78.0" layoutY="4.0" spacing="10.0" styleClass="transport-option">
+                    <ImageView fitHeight="34.0" fitWidth="40.0">
+                        <image>
+                            <Image url="@../../../img/front-of-bus.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Bus" textFill="#263e2a">
+                        <font>
+                            <Font name="Alatsi Regular" size="26.0" />
+                        </font>
+                    </Label>
+                </HBox>
+                <HBox fx:id="TrainBox" layoutX="270.0" layoutY="4.0" spacing="10.0" styleClass="transport-option">
+                    <ImageView fitHeight="34.0" fitWidth="40.0">
+                        <image>
+                            <Image url="@../../../img/train.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Trains" textFill="#263e2a">
+                        <font>
+                            <Font name="Alatsi Regular" size="26.0" />
+                        </font>
+                    </Label>
+                </HBox>
+                <HBox fx:id="PlaneBox" layoutX="468.0" layoutY="4.0" prefHeight="54.0" prefWidth="149.0" styleClass="transport-option">
+                    <children>
+                        <ImageView fitHeight="31.0" fitWidth="53.0">
+                            <image>
+                                <Image url="@../../../img/plane.png" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="34.0" prefWidth="78.0" text="Planes" textFill="#263e2a">
+                            <font>
+                                <Font name="Alatsi Regular" size="26.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+
+        <!--        MENU PANE      -->
+        <AnchorPane id="menuPane" layoutY="-3.0" prefHeight="57.0" prefWidth="1361.0" style="-fx-background-color: #f7f9e8;">
+            <children>
+                <ImageView id="imgMainLogo" fitHeight="63.0" fitWidth="52.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/MainLogo.png" />
+                    </image>
+                </ImageView>
+                <Label id="labelName" layoutX="51.0" layoutY="17.0" prefHeight="27.0" prefWidth="184.0" text="VIETNAMTRAVEL" textAlignment="CENTER">
+                    <font>
+                        <Font name="BenguiatStd-MediumCondensed" size="20.0" />
+                    </font>
+                </Label>
+                <AnchorPane id="menuPane" layoutX="500.0" prefHeight="58.0" prefWidth="663.0">
+                    <children>
+                        <Button fx:id="menuHome" layoutX="-4.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuHomeAction" prefHeight="52.0" prefWidth="148.0" styleClass="btMenu" text="Attractions" />
+                        <Button fx:id="menuDes" layoutX="145.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuDestiAction" prefHeight="52.0" prefWidth="172.0" styleClass="btMenu" text="Destinations" />
+                        <Button fx:id="menuStay" layoutX="321.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuStayAction" prefHeight="52.0" prefWidth="114.0" styleClass="btMenu" text="Stay" />
+                    </children>
+                </AnchorPane>
+                <Button id="btAccount" fx:id="btAccount" cache="true" layoutX="1214.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleBtAccountAction" prefHeight="38.0" prefWidth="107.0" text="Admin">
+                    <font>
+                        <Font name="Alatsi Regular" size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Account_icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+        <!--        END MENU PANE      -->
+    </children>
+</AnchorPane>

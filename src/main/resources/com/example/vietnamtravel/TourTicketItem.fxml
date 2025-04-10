@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tourItem" prefHeight="208.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Ticket ID:" textFill="#000000b2">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="65.0" text="Tourist attraction:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="115.0" text="Visit date:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="746.0" layoutY="64.0" text="Number of Adults:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="445.0" layoutY="65.0" text="Name:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="115.0" text="Phone number:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textTourBookID" layoutX="101.0" layoutY="14.0" text="0" textFill="#000000b2">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textNameTour" layoutX="181.0" layoutY="66.0" prefHeight="26.0" prefWidth="243.0" text="Name">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textName" layoutX="525.0" layoutY="66.0" prefHeight="26.0" prefWidth="206.0" text="Null">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textPhoneNum" layoutX="525.0" layoutY="115.0" prefHeight="26.0" prefWidth="148.0" text="000000000">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textAdults" layoutX="951.0" layoutY="64.0" prefHeight="30.0" prefWidth="51.0" text="1">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textVisitDate" layoutX="112.0" layoutY="115.0" text="00/00/0000">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="746.0" layoutY="112.0" text="Number of Children:">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textChild" layoutX="951.0" layoutY="112.0" prefHeight="26.0" prefWidth="51.0" text="0">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textTotalPayment" layoutX="811.0" layoutY="163.0" prefHeight="30.0" prefWidth="230.0" text="000,000,000 VND" textFill="#00b5ff">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

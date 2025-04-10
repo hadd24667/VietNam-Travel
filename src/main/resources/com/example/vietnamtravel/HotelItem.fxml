@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="218.0" prefWidth="933.0" style="-fx-background-color: f7f9e8;" styleClass="border2" stylesheets="@../../../css/Stay.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StayController">
+   <children>
+      <Line endX="-150.00003051757812" endY="138.20001220703125" layoutX="407.0" layoutY="65.0" startX="-150.0" startY="-61.0" />
+      <Label fx:id="textNameHotel" layoutX="277.0" layoutY="27.0" text="TEN CHO NGHI" textFill="#263e2a">
+         <font>
+            <Font name="Alatsi Regular" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="textDiaChi" layoutX="277.0" layoutY="64.0" text="44 Van Tuong, Hoa Hai, Ngu Hanh Son, Da Nang" textFill="#547c5a">
+         <font>
+            <Font name="Alatsi Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="textMoTa" layoutX="277.0" layoutY="99.0" prefHeight="26.0" prefWidth="486.0" text="Nha nghi nay co thang hanh dep trai 1m82 biet nau an ngon" textFill="#263e2a">
+         <font>
+            <Font name="Alatsi Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="textGiaPhong" layoutX="796.0" layoutY="138.0" text="XXX.XXX VND" textFill="#050568">
+         <font>
+            <Font name="Alatsi Regular" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btBookNow" layoutX="452.0" layoutY="164.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" style="-fx-background-color: #263e2a; -fx-background-radius: 10px;" text="Book Now" textFill="#f9f7e8">
+         <font>
+            <Font name="Eras Bold ITC" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="textDoRongPhong1" layoutX="763.0" layoutY="30.0" prefHeight="36.0" prefWidth="32.0" text="00" textFill="#547c5a">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="796.0" layoutY="28.0" text="/Phòng" textFill="#547c5a">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane fx:id="imgViewHotel" layoutX="7.0" layoutY="9.0" prefHeight="200.0" prefWidth="242.0" />
+   </children>
+</AnchorPane>

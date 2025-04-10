@@ -1,0 +1,59 @@
+/*!*mainPane custom *!*/
+/*.custom-mainPane {*/
+/*    -fx-background-color: #f9f7e8 !important;*/
+/*    !*-fx-padding: 0 0 0 400px;*!*/
+/*    -fx-min-height: 40px;*/
+/*}*/
+/*.custom-menuBar {*/
+/*    -fx-background-color: #f9f7e8 !important;*/
+/*    -fx-padding: 2 0 0 400px;*/
+/*    -fx-min-height: 40px;*/
+/*    -fx-font-size: 20px;!*set font cho chữ*!*/
+/*    -fx-text-fill: #263e2a; !* Màu chữ  *!*/
+/*    -fx-font-family: "Brush Script MT", cursive;*/
+/*}*/
+/*.sign-in-button {*/
+
+/*    -fx-min-width: 100px; !* Chiều rộng tối thiểu *!*/
+/*    -fx-min-height: 30px; !* Chiều cao tối thiểu *!*/
+/*    -fx-max-width: 200px; !* Chiều rộng tối đa *!*/
+/*    -fx-max-height: 50px; !* Chiều cao tối đa *!*/
+
+/*    -fx-font-size: 20px;!*set font cho chữ*!*/
+
+/*    -fx-background-color: #f9f7e8;*/
+
+/*    -fx-border-color: #263e2a; !* Màu viền *!*/
+/*    !*-fx-background-color: #7c7b5a;!*maàu nền*!*!*/
+/*    -fx-border-width: 2px; !* Độ rộng viền *!*/
+/*    -fx-border-radius: 10px; !* Bán kính bo tròn viền *!*/
+/*}*/
+
+/*.login-button {*/
+/*    -fx-min-width: 120px; !* Chiều rộng tối thiểu *!*/
+/*    -fx-min-height: 30px; !* Chiều cao tối thiểu *!*/
+/*    -fx-max-width: 170px; !* Chiều rộng tối đa *!*/
+/*    -fx-max-height: 50px; !* Chiều cao tối đa *!*/
+
+/*    -fx-font-size: 20px;!*set font cho chữ*!*/
+/*    -fx-text-fill: #f9f7e8;*/
+
+/*    -fx-border-color: #263e2a; !* Màu viền *!*/
+/*    -fx-background-color: #263e2a;!*maàu nền*!*/
+/*    -fx-border-width: 2px; !* Độ rộng viền *!*/
+/*    -fx-border-radius: 10px; !* Bán kính bo tròn viền *!*/
+/*}*/
+.root{
+    -fx-background-image: url("../img/HaLongBay.jpeg");
+    -fx-background-size: cover;
+}
+#menuPane{
+    -fx-background-color: #f9f7e8;
+}
+#menuBar{
+    -fx-background-color: #f9f7e8;
+}
+#lableTest{
+    -fx-graphic: url("/img/Location_icon.png");
+    /*-fx-background-color: #263e2a;*/
+}

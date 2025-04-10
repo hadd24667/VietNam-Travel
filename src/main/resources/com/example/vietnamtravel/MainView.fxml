@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="730.0" prefWidth="1350.0" stylesheets="@../../../css/mainView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <AnchorPane layoutY="55.0" opacity="0.65" prefHeight="670.0" prefWidth="567.0" style="-fx-background-color: #f9f7e8;">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <BoxBlur height="252.0" iterations="3" width="255.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane id="blurPane" prefHeight="730.0" prefWidth="1362.0" />
+      <AnchorPane layoutX="-1.0" prefHeight="730.0" prefWidth="1362.0">
+         <children>
+            <Button id="btPrice" fx:id="btPrice" layoutX="278.0" layoutY="605.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="137.0" style="-fx-background-color: #f9f7e8;" text="700.000 VND" textFill="#263e2a">
+            <graphic>
+               <ImageView fitHeight="20.0" fitWidth="20.0">
+                  <Image url="@../../../img/Coin.png" />
+                  <effect>
+                     <ColorAdjust hue="0.3" />
+                  </effect>
+               </ImageView>
+            </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="6.34" radius="4.8" spread="0.02" width="14.86">
+                     <color>
+                        <Color opacity="0.885496199131012" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Label fx:id="textPlace" layoutX="102.0" layoutY="278.0" prefHeight="74.0" prefWidth="625.0" styleClass="font" text="HA LONG BAY" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="textLocation" layoutX="138.0" layoutY="234.0" prefHeight="44.0" prefWidth="248.0" styleClass="font" text="Quang Ninh, Viet Nam" textFill="WHITE">
+               <font>
+                  <Font name="Alatsi Regular" size="24.0" />
+               </font>
+            </Label>
+            <ImageView id="location_logo" fitHeight="34.0" fitWidth="36.0" layoutX="102.0" layoutY="239.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../img/Location_icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.95" />
+               </effect>
+            </ImageView>
+            <TextField id="searchTextField" fx:id="textSearch" cache="true" depthTest="DISABLE" layoutX="436.0" layoutY="103.0" prefHeight="44.0" prefWidth="478.0" promptText="Search tourist spots">
+               <font>
+                  <Font name="Alatsi Regular" size="18.0" />
+               </font>
+            </TextField>
+            <Button id="btSearch" fx:id="btSearch" layoutX="863.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleSearchAction" prefHeight="34.0" prefWidth="30.0" style="-fx-background-color: transparent;" />
+            <Button id="btBooking" fx:id="btBooking" layoutX="102.0" layoutY="605.0" mnemonicParsing="false" onAction="#handleBookingAction" prefHeight="42.0" prefWidth="128.0" style="-fx-background-color: #f9f7e8;" text="Booking" textFill="#263e2a">
+               <graphic>
+                  <ImageView id="imgBooking" fitHeight="20.0" fitWidth="20.0">
+                     <Image url="@../../../img/Pointer.png" />
+                     <effect>
+                        <ColorAdjust hue="0.3" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="BenguiatStd-MediumCondensed" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="6.34" radius="4.8" spread="0.02" width="14.86">
+                     <color>
+                        <Color opacity="0.885496199131012" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ScrollPane layoutX="443.0" layoutY="147.0" prefHeight="116.0" prefWidth="464.0">
+               <content>
+                  <VBox fx:id="vBoxSearch" prefHeight="114.0" prefWidth="455.0" />
+               </content>
+            </ScrollPane>
+            <Label fx:id="textContent" alignment="TOP_CENTER" layoutX="102.0" layoutY="365.0" prefHeight="214.0" prefWidth="616.0" text="Ha Long Bay is undoubtedly one of the most renowned tourist destinations in Vietnam. Ha Long Bay is renowned for its spectacular seascape of limestone pillars and isles rising from the emerald waters of the Gulf of Tonkin." textFill="#fffcfc" wrapText="true">
+               <font>
+                     <Font name="Josefin Sans Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="menuPane" layoutY="-3.0" prefHeight="57.0" prefWidth="1361.0" style="-fx-background-color: #f7f9e8;">
+         <children>
+            <ImageView id="imgMainLogo" fitHeight="63.0" fitWidth="52.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/MainLogo.png" />
+               </image>
+            </ImageView>
+            <Label id="labelName" layoutX="51.0" layoutY="17.0" prefHeight="27.0" prefWidth="184.0" text="VIETNAMTRAVEL" textAlignment="CENTER">
+               <font>
+                  <Font name="BenguiatStd-MediumCondensed" size="20.0" />
+               </font>
+            </Label>
+<!--            ACCOUNT PANE-->
+            <AnchorPane fx:id="paneAccount" layoutX="1135.0" layoutY="8.0" prefHeight="44.0" prefWidth="221.0">
+               <Button id="btAccount" fx:id="btAccount" cache="true" layoutX="92.0" layoutY="3.0" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBtAccountAction" text="Account">
+                  <font>
+                     <Font name="Alatsi Regular" size="15.0" />
+                  </font>
+                  <graphic>
+                     <ImageView fitHeight="24.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../img/Account_icon.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+            </AnchorPane>
+            <AnchorPane id="menuPane" layoutX="361.0" layoutY="1.0" prefHeight="58.0" prefWidth="669.0">
+               <children>
+                  <Button fx:id="menuHome" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuHomeAction" prefHeight="52.0" prefWidth="128.0" styleClass="btMenu" text="Home" />
+                  <Button fx:id="menuDes" layoutX="145.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuDestiAction" prefHeight="52.0" prefWidth="172.0" styleClass="btMenu" text="Destinations" />
+                  <Button fx:id="menuStay" layoutX="317.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuStayAction" prefHeight="52.0" prefWidth="118.0" styleClass="btMenu" text="Stay" />
+                  <Button fx:id="menuTicket" layoutX="435.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMenuTicketAction" prefHeight="52.0" prefWidth="147.0" styleClass="btMenu" text="My Ticket" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
